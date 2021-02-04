@@ -1,0 +1,42 @@
+.posts-page {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    .post-item {
+        margin: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        outline: 1px solid black;
+        transition: all 0.5s;
+        flex: 0 1 auto;
+
+        .title {
+            margin-bottom: 15px;
+            border-bottom: 1px dotted black;
+        }
+
+        .user-block {
+            transition: all 0.5s;
+            margin-top: 15px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        &:hover {
+            background-color: lightslategray;
+            color: white;
+            .title {
+                border-bottom: 1px dotted white;
+            }
+            .user-block {
+                color: white;
+                margin-top: 15px;
+                padding: 15px;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
