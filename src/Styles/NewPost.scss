@@ -1,0 +1,43 @@
+.new-post {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  font-size: x-large;
+
+  .new-post-wrapper {
+    //border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 25px;
+    font-size: x-large;
+    width: 500px;
+    .field {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 10px;
+      //width: 500px;
+      justify-content: flex-end;
+      //border: 1px solid black;
+
+      .label {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+//.title{
+//    margin-bottom: 15px;
+//    border-bottom: 1px dotted black;
+//}
+
+
+
+

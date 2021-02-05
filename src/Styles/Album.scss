@@ -1,9 +1,23 @@
-.album{
+
+
+.users-page{
+    margin: 15px;
+    padding: 15px;
     display: flex;
-    align-items: center;
-    background-color: lightpink;
-  
-    height: 100px;
+    flex-direction: column;
+    outline: 1px solid black;
+    transition: all 0.5s;
+    flex: 0 1 auto;
+}
+
+
+
+
+
+
+.album{
+    margin-bottom: 15px;
+    border-bottom: 1px dotted black;
 }
 
 

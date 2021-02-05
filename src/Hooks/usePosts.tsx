@@ -3,13 +3,12 @@ import {useState} from "react";
 import useLoading from "./useLoading";
 import useUsers from "./useUsers";
 
-export type IPost ={
+export type IPost = {
     userId: number,
     id: number,
     title: string,
     body: string
 }
-
 
 
 const usePosts = () => {
@@ -23,19 +22,30 @@ const usePosts = () => {
             const posts = await axios.get(endpoint);
             setPosts(posts.data)
             setError('')
-        }
-        catch (e) {
+        } catch (e) {
             setError(e)
-        }
-        finally {
+        } finally {
             setLoading(false)
         }
 
 
     }
+    const addPost = async (post: IPost) => {
+        try {
+            setLoading(true)
+            const result = await axios.post(endpoint, JSON.stringify(post), {headers: {'Content-type': 'application/json; charset=UTF-8'}});
+            console.log('result', result)
+            setError('')
+        } catch (e) {
+            setError(e)
+        } finally {
+            setLoading(false)
+        }
+    }
 
     return {
         getPosts, isLoading,
+        addPost,
         posts,
         error
     }

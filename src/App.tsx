@@ -2,11 +2,12 @@ import React from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import UsersPage from './Components/UsersPage';
-import Album from "./Components/Album";
 import PostsPage from "./Components/PostsPage";
 
 // @ts-ignore
 import {Scrollbars} from 'rc-custom-scrollbars';
+import AlbumPage from "./Components/AlbumPage";
+import NewPost from "./Components/NewPost";
 
 function App() {
     return (
@@ -23,8 +24,12 @@ function App() {
                         <PostsPage/>
                     </Route>
                     <Route path={'/album'}>
-                        <Album/>
+                        <AlbumPage/>
                     </Route>
+                <Route path={'/new-post'}>
+                    <NewPost/>
+                </Route>
+
 
             </Scrollbars>
                 </div>
