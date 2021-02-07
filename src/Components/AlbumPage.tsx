@@ -25,7 +25,7 @@ const AlbumPage = () => {
 
 
     return (
-        <div className="users-page">
+        <div className="album-page">
             {album.map((album: IAlbum, index) => {
                 return (
                     <div onClick={() => onAlbumId(album.id)} className="album">{album.title}</div>

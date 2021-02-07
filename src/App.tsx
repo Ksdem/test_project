@@ -8,13 +8,14 @@ import PostsPage from "./Components/PostsPage";
 import {Scrollbars} from 'rc-custom-scrollbars';
 import AlbumPage from "./Components/AlbumPage";
 import NewPost from "./Components/NewPost";
+import AlbumItem from "./Components/AlbumItem";
 
 function App() {
     return (
 
         <BrowserRouter>
             <div className="content">
-            <Scrollbars autoHide>
+                <Scrollbars autoHide>
 
                     <NavBar/>
                     <Route path={'/users'}>
@@ -23,16 +24,20 @@ function App() {
                     <Route path={'/posts'}>
                         <PostsPage/>
                     </Route>
-                    <Route path={'/album'}>
+                    <Route path={'/album/:id'}>
+                    <AlbumItem/>
+                </Route>
+                    <Route exact path={'/album'}>
                         <AlbumPage/>
                     </Route>
-                <Route path={'/new-post'}>
-                    <NewPost/>
-                </Route>
+                    <Route path={'/new-post'}>
+                        <NewPost/>
+                    </Route>
 
 
-            </Scrollbars>
-                </div>
+
+                </Scrollbars>
+            </div>
         </BrowserRouter>
     );
 
