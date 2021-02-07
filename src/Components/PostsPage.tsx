@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import usePosts, {IPost} from "../Hooks/usePosts";
 import useUsers from "../Hooks/useUsers";
 import PostItem from "./PostItem";

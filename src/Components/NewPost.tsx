@@ -51,9 +51,12 @@ const NewPost = () => {
     return (
         <div className="new-post">
             <div className="new-post-wrapper">
-                <Field title={'Заголовок'} isDisabled={isLoading} value={post.title} valueKey={'title'} onChange={onChangeHandler}/>
-                <Field title={'Описание'} isDisabled={isLoading} value={post.body} valueKey={'body'} onChange={onChangeHandler}/>
-                <Field title={'Айди пользователя'} isDisabled={isLoading} value={post.userId} valueKey={'userId'} onChange={onChangeHandler}/>
+                <Field title={'Заголовок'} isDisabled={isLoading} value={post.title} valueKey={'title'}
+                       onChange={onChangeHandler}/>
+                <Field title={'Описание'} isDisabled={isLoading} value={post.body} valueKey={'body'}
+                       onChange={onChangeHandler}/>
+                <Field title={'Айди пользователя'} isDisabled={isLoading} value={post.userId} valueKey={'userId'}
+                       onChange={onChangeHandler}/>
                 <button onClick={onClickHandler} disabled={isLoading}>ADD POST</button>
             </div>
         </div>);

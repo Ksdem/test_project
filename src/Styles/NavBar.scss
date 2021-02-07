@@ -1,40 +1,40 @@
 .nav_bar {
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    overflow-x: auto;
-    flex-direction: row;
-    justify-content: center;
-    /*background-color: blue;*/
-    background-color: rgba(0, 0, 0, .9);
-    height: 100px;
-    color: white;
-    user-select: none;
-    z-index: 10000;
-    font-size: xxx-large;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  overflow-x: auto;
+  flex-direction: row;
+  justify-content: center;
+  /*background-color: blue;*/
+  background-color: rgba(0, 0, 0, .9);
+  height: 100px;
+  color: white;
+  user-select: none;
+  z-index: 10000;
+  font-size: xxx-large;
 }
 
 
-.di{
-    display: flex;
-    margin: 0 25px;
-    padding: 5px 15px;
-    justify-content: center;
+.di {
+  display: flex;
+  margin: 0 25px;
+  padding: 5px 15px;
+  justify-content: center;
 
-    border: none;
-    text-decoration: none;
-    color: white;
-    transition: border-bottom-color .5s ease;
-    border-bottom: 1px solid black;
+  border: none;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom-color .5s ease;
+  border-bottom: 1px solid black;
 }
 
 .di:active {
-    color: white;
+  color: white;
 }
 
 .di:hover {
-    border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 

@@ -3,17 +3,16 @@ import {useState} from "react";
 import useLoading from "./useLoading";
 
 
-export type IAlbum ={
+export type IAlbum = {
     userId: number,
     id: number,
     title: string
 }
 
 
-
 const useAlbum = () => {
     const endpoint = 'https://jsonplaceholder.typicode.com/albums';
-    const [album, setAlbum] = useState([] as IAlbum[] )
+    const [album, setAlbum] = useState([] as IAlbum[])
     const {setLoading, setError, error, isLoading} = useLoading();
 
     const getAlbums = async () => {
@@ -22,11 +21,9 @@ const useAlbum = () => {
             const album = await axios.get(endpoint);
             setAlbum(album.data)
             setError('')
-        }
-        catch (e) {
+        } catch (e) {
             setError(e)
-        }
-        finally {
+        } finally {
             setLoading(false)
         }
 

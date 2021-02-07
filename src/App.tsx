@@ -25,15 +25,14 @@ function App() {
                         <PostsPage/>
                     </Route>
                     <Route path={'/album/:id'}>
-                    <AlbumItem/>
-                </Route>
+                        <AlbumItem/>
+                    </Route>
                     <Route exact path={'/album'}>
                         <AlbumPage/>
                     </Route>
                     <Route path={'/new-post'}>
                         <NewPost/>
                     </Route>
-
 
 
                 </Scrollbars>
